@@ -130,12 +130,15 @@ h4 {
 .about {
     width: 100%;
     padding: 50px 0px;
-    background-color: #191919;
+    /* background-color: #191919; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about img {
-    height: 150;
-    width: 300px;
+    height: 180;
+    width: 400px;
 }
 
 .about-text {
@@ -172,6 +175,44 @@ h4 {
     font-size: 18px;
     margin-bottom: 45px;
 }
+
+section.about span {
+    font-size: 100px;
+    line-height: 105px;
+    align-items: bottom;
+}
+
+.heart {
+    position: relative;
+    fill: red;
+    width: 150px;
+    margin: 0 50px;
+    animation: pulse 4s infinite;
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+
+    15% {
+        transform: scale(1.25);
+    }
+
+    25% {
+        transform: scal(1.15);
+    }
+
+    35% {
+        transform: scale(1.25);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
 
 button {
     background-color: #f9004d;
@@ -423,4 +464,13 @@ footer p:nth-child(2) {
     color: #fff;
     bottom: 35px;
     font-size: 14px;
+}
+
+/* RESPONSIVE MENU START */
+
+@media only screen and (max-width: 850) {
+    .heart {
+        width: 50px;
+        margin: 0 20px;
+    }
 }
