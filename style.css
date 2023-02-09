@@ -79,7 +79,7 @@ span{
         display: flex;
     }
 
-    nav ul li a {
+    .navbar-links {
         display: none; 
         width: 100%;
     }
@@ -89,20 +89,20 @@ span{
         align-items: flex-start;
     }
 
-    nav ul {
+    .navbar-links ul {
         width: 100%;
         flex-direction: column;
     }
 
-    nav li {
+    .navbar-links li {
         text-align: center;
     }
 
-    nav li a {
+    .navbar-links li a {
         padding: .5rem 1rem;
     }
 
-    nav.active {
+    .navbar-links.active {
         display: flex;
     }
 }
